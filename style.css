@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+}
+
+h1{
+    opacity: .5;
+    font-weight: 400;    
+    font-size: clamp(.7em, 3vw, 1.9em);
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+h2{
+    font-weight: 600;
+    font-size: clamp(.7em, 3vw, 1.9em);
+    margin: 0;
+}
+
+.head p{
+    font-weight: 400;
+    font-size: clamp(0.3em, 2vw, .8em);
+    opacity: .5;
+    width: 60%;
+}
+
+@media (min-width: 400px) {
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+    margin-top: 2em;
+} 
+}
+
+@media (max-width: 400px){
+    .head{
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+        margin-top: 1em;
+        width: 100%;
+    }
+    article{
+        width: 100%;
+    }
+}
+
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 10px;
+    width: clamp(150px, 50vw, 270px);
+    border-radius: 5px;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+article h3{
+    font-weight: 600;
+    font-size: clamp(.5em, 3vw, .9em);
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+
+article p{
+    font-weight: 400;
+    opacity: .4;
+    font-size: clamp(.3em, 2vw, .8em);
+}
+
+article img{
+    margin-top: 1.5em;
+    align-self: flex-end;
+    width: clamp(25px, 20vw, 50px);
+}
+
+.supervisor{
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.team-builder{
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+.karma{
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+.calculator{
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
