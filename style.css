@@ -50,6 +50,9 @@ h2{
 }
 
 @media screen and (max-width: 375px){
+    h1, h2{
+        font-size: 1.2em;
+    }
     .head{
         width: 100%;
     }
